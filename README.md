@@ -296,14 +296,31 @@ Testado e otimizado para as seguintes resoluções:
 <meta name="author" content="...">
 ```
 
-### Open Graph (Redes Sociais)
-Pronto para adicionar:
+### Open Graph & Twitter Card (Redes Sociais) ✅
+Meta tags implementadas para compartilhamento otimizado em redes sociais:
 ```html
-<meta property="og:title" content="...">
-<meta property="og:description" content="...">
-<meta property="og:image" content="...">
-<meta property="og:url" content="...">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anaclarapsico.com.br">
+<meta property="og:title" content="Dra. Ana Clara Oliveira | Psicóloga CRP 06/123456">
+<meta property="og:description" content="Psicóloga especializada em Terapia Cognitivo-Comportamental...">
+<meta property="og:image" content="https://anaclarapsico.com.br/images/thumbnail-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dra. Ana Clara Oliveira | Psicóloga CRP 06/123456">
+<meta name="twitter:description" content="Psicóloga especializada em TCC...">
+<meta name="twitter:image" content="https://anaclarapsico.com.br/images/thumbnail-og.png">
 ```
+
+### Thumbnail Social Media
+Imagem otimizada (1200x630px) criada com:
+- Design profissional e moderno
+- Cores suaves (lavanda e rosa) alinhadas com a identidade do site
+- Informações-chave: nome, especialidade e diferenciais
+- Localizada em: `site/images/thumbnail-og.png`
 
 ---
 

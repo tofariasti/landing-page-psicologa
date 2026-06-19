@@ -1,0 +1,26 @@
+{
+  "name": "Dra. Ana Clara Oliveira - Psicóloga",
+  "short_name": "Ana Clara Psico",
+  "description": "Psicóloga especializada em Terapia Cognitivo-Comportamental",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9b7ed6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/thumbnail-og.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "lifestyle", "medical"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
