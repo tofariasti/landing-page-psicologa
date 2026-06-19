@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dra. Ana Clara Oliveira - Psicóloga especializada em Terapia Cognitivo-Comportamental, Ansiedade e Burnout. Atendimento presencial e online com horários flexíveis.">
+  <meta name="keywords" content="psicóloga, terapia online, ansiedade, burnout, terapia cognitivo-comportamental, psicoterapia">
+  <meta name="author" content="Dra. Ana Clara Oliveira">
+  <title>Dra. Ana Clara Oliveira | Psicóloga CRP 06/123456</title>
+  
+  <!-- Preconnect para fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Library para animações -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+  <!-- Header/Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">🧠</span>
+        <span class="nav__logo-text">Dra. Ana Clara</span>
+      </a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
+          <li class="nav__item"><a href="#testimonials" class="nav__link">Depoimentos</a></li>
+          <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link nav__cta">Agendar Consulta</a></li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="nav__toggle" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__background">
+      <div class="hero__gradient"></div>
+      <div class="hero__particles" id="particles"></div>
+    </div>
+    
+    <div class="hero__container container">
+      <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+        <span class="hero__badge">CRP 06/123456</span>
+        <h1 class="hero__title">
+          Descubra uma nova forma de 
+          <span class="hero__title-highlight">sanar e transformar</span>
+        </h1>
+        <p class="hero__description">
+          Psicóloga especializada em Terapia Cognitivo-Comportamental. 
+          Ajudo pessoas a superarem ansiedade, burnout e desafios emocionais 
+          através de uma abordagem humanizada e baseada em evidências.
+        </p>
+        
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Agendar Consulta
+          </a>
+          <a href="#about" class="btn btn--secondary">
+            Conhecer mais
+          </a>
+        </div>
+        
+        <div class="hero__stats">
+          <div class="hero__stat" data-aos="fade-up" data-aos-delay="200">
+            <span class="hero__stat-number" data-count="500">0</span>
+            <span class="hero__stat-label">Pacientes atendidos</span>
+          </div>
+          <div class="hero__stat" data-aos="fade-up" data-aos-delay="300">
+            <span class="hero__stat-number" data-count="8">0</span>
+            <span class="hero__stat-label">Anos de experiência</span>
+          </div>
+          <div class="hero__stat" data-aos="fade-up" data-aos-delay="400">
+            <span class="hero__stat-number" data-count="98">0</span>
+            <span class="hero__stat-label">% de satisfação</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero__image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+        <div class="hero__image-wrapper">
+          <div class="hero__image-float">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&q=80" alt="Dra. Ana Clara Oliveira - Psicóloga" loading="eager">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="1000">
+      <a href="#about" class="hero__scroll-link">
+        <span>Role para descobrir</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Sobre mim</span>
+        <h2 class="section__title">Uma jornada dedicada ao cuidado emocional</h2>
+      </div>
+      
+      <div class="about__container">
+        <div class="about__image" data-aos="fade-right">
+          <div class="about__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=700&fit=crop&q=80" alt="Consultório acolhedor">
+            <div class="about__image-decoration"></div>
+          </div>
+        </div>
+        
+        <div class="about__content">
+          <div class="about__text" data-aos="fade-up">
+            <p class="about__intro">
+              Olá! Sou Ana Clara Oliveira, psicóloga formada pela Universidade de São Paulo 
+              com especialização em Terapia Cognitivo-Comportamental pelo Instituto de Psicologia.
+            </p>
+            
+            <p>
+              Com mais de 8 anos de experiência clínica, dedico-me a ajudar pessoas a 
+              compreenderem suas emoções, pensamentos e comportamentos, promovendo 
+              transformações significativas e duradouras em suas vidas.
+            </p>
+            
+            <p>
+              Minha abordagem combina técnicas comprovadas cientificamente com um 
+              olhar humanizado e acolhedor, respeitando a singularidade de cada pessoa 
+              e construindo juntos um caminho de autoconhecimento e bem-estar.
+            </p>
+          </div>
+          
+          <div class="about__credentials" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="about__credentials-title">Formação & Credenciais</h3>
+            <ul class="about__credentials-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>CRP 06/123456 - Conselho Regional de Psicologia</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Graduação em Psicologia - USP</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Especialização em TCC - Instituto de Psicologia</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Formação em Mindfulness e Terapias de 3ª Geração</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>Atualização constante em congressos e workshops</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Serviços</span>
+        <h2 class="section__title">Como posso te ajudar?</h2>
+        <p class="section__description">
+          Ofereco atendimento psicológico especializado em diversas modalidades, 
+          sempre com foco no seu bem-estar e desenvolvimento pessoal.
+        </p>
+      </div>
+      
+      <div class="services__grid">
+        <div class="service__card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="service__title">Terapia Individual</h3>
+          <p class="service__description">
+            Atendimento personalizado para questões como ansiedade, depressão, 
+            autoestima, relacionamentos e desenvolvimento pessoal.
+          </p>
+          <ul class="service__features">
+            <li>Sessões de 50 minutos</li>
+            <li>Abordagem TCC</li>
+            <li>Foco em resultados</li>
+          </ul>
+        </div>
+        
+        <div class="service__card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="service__title">Terapia de Casal</h3>
+          <p class="service__description">
+            Auxílio na resolução de conflitos, melhora da comunicação e 
+            fortalecimento do vínculo emocional entre parceiros.
+          </p>
+          <ul class="service__features">
+            <li>Sessões de 1h30</li>
+            <li>Mediação de conflitos</li>
+            <li>Reconstrução do diálogo</li>
+          </ul>
+        </div>
+        
+        <div class="service__card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3 class="service__title">Terapia Familiar</h3>
+          <p class="service__description">
+            Trabalho com dinâmicas familiares, conflitos intergeracionais e 
+            promoção de um ambiente saudável para todos os membros.
+          </p>
+          <ul class="service__features">
+            <li>Sessões de 1h30</li>
+            <li>Dinâmicas sistêmicas</li>
+            <li>Harmonia familiar</li>
+          </ul>
+        </div>
+        
+        <div class="service__card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="service__title">Atendimento Online</h3>
+          <p class="service__description">
+            Psicoterapia com a mesma qualidade do presencial, no conforto da 
+            sua casa, com horários flexíveis e plataforma segura.
+          </p>
+          <ul class="service__features">
+            <li>Horários flexíveis</li>
+            <li>Plataforma segura</li>
+            <li>Mesma eficácia</li>
+          </ul>
+        </div>
+        
+        <div class="service__card service__card--highlight" data-aos="fade-up" data-aos-delay="500">
+          <div class="service__badge">Especialidade</div>
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="service__title">Ansiedade & Burnout</h3>
+          <p class="service__description">
+            Tratamento especializado para transtornos de ansiedade, síndrome 
+            de burnout e estresse crônico com técnicas validadas.
+          </p>
+          <ul class="service__features">
+            <li>Protocolo especializado</li>
+            <li>Técnicas de regulação</li>
+            <li>Prevenção de recaídas</li>
+          </ul>
+        </div>
+        
+        <div class="service__card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="service__title">Primeira Sessão</h3>
+          <p class="service__description">
+            Conheça meu trabalho com desconto especial na primeira consulta. 
+            Sem compromisso, apenas uma conversa acolhedora.
+          </p>
+          <ul class="service__features">
+            <li>20% de desconto</li>
+            <li>Avaliação inicial</li>
+            <li>Sem compromisso</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentials Section -->
+  <section class="differentials section">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Diferenciais</span>
+        <h2 class="section__title">Por que escolher meu atendimento?</h2>
+      </div>
+      
+      <div class="differentials__grid">
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="differential__icon">🎯</div>
+          <h3 class="differential__title">Abordagem Baseada em Evidências</h3>
+          <p class="differential__text">
+            Utilizo técnicas comprovadas cientificamente pela Terapia Cognitivo-Comportamental, 
+            reconhecida mundialmente por sua eficácia.
+          </p>
+        </div>
+        
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="differential__icon">💜</div>
+          <h3 class="differential__title">Atendimento Humanizado</h3>
+          <p class="differential__text">
+            Cada pessoa é única. Ofereço um espaço seguro, acolhedor e livre de julgamentos 
+            para você se expressar livremente.
+          </p>
+        </div>
+        
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="differential__icon">⏰</div>
+          <h3 class="differential__title">Horários Flexíveis</h3>
+          <p class="differential__text">
+            Atendimento de segunda a sábado, incluindo horários noturnos, 
+            para se adaptar à sua rotina.
+          </p>
+        </div>
+        
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="400">
+          <div class="differential__icon">🔒</div>
+          <h3 class="differential__title">Sigilo Absoluto</h3>
+          <p class="differential__text">
+            Seu processo terapêutico é confidencial e protegido pelo código de ética 
+            profissional da psicologia.
+          </p>
+        </div>
+        
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="500">
+          <div class="differential__icon">📱</div>
+          <h3 class="differential__title">Suporte Entre Sessões</h3>
+          <p class="differential__text">
+            Canal de comunicação para emergências e dúvidas pontuais, 
+            mantendo a continuidade do seu cuidado.
+          </p>
+        </div>
+        
+        <div class="differential__item" data-aos="zoom-in" data-aos-delay="600">
+          <div class="differential__icon">📊</div>
+          <h3 class="differential__title">Foco em Resultados</h3>
+          <p class="differential__text">
+            Trabalho orientado a objetivos com avaliações periódicas do seu progresso 
+            e ajustes no plano terapêutico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Depoimentos</span>
+        <h2 class="section__title">O que dizem meus pacientes</h2>
+      </div>
+      
+      <div class="testimonials__slider" id="testimonials-slider">
+        <div class="testimonial__card" data-aos="fade-up">
+          <div class="testimonial__rating">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="testimonial__text">
+            "A terapia com a Dra. Ana Clara transformou minha vida. Aprendi a lidar com 
+            minha ansiedade de forma muito mais saudável e hoje me sinto muito mais confiante 
+            e em paz comigo mesma."
+          </p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/150?img=1" alt="Mariana S.">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Mariana S.</h4>
+              <span class="testimonial__author-role">Paciente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial__card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial__rating">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="testimonial__text">
+            "Profissional extremamente competente e acolhedora. As sessões me ajudaram a 
+            superar um momento muito difícil de burnout e hoje tenho muito mais equilíbrio 
+            entre vida pessoal e profissional."
+          </p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Ricardo M.">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Ricardo M.</h4>
+              <span class="testimonial__author-role">Paciente há 8 meses</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial__card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial__rating">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="testimonial__text">
+            "Iniciei a terapia de casal com meu marido e foi a melhor decisão que tomamos. 
+            A Dra. Ana Clara nos ajudou a reconstruir nosso diálogo e hoje nosso relacionamento 
+            está muito mais forte e saudável."
+          </p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/150?img=5" alt="Julia & Carlos">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Julia & Carlos</h4>
+              <span class="testimonial__author-role">Terapia de casal</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial__card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial__rating">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="testimonial__text">
+            "O atendimento online superou minhas expectativas. Mesmo à distância, sinto o 
+            acolhimento e a dedicação da Dra. Ana Clara. Recomendo muito!"
+          </p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/150?img=9" alt="Fernanda L.">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Fernanda L.</h4>
+              <span class="testimonial__author-role">Atendimento online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonials__controls">
+        <button class="testimonials__prev" aria-label="Depoimento anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="testimonials__next" aria-label="Próximo depoimento">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Perguntas Frequentes</span>
+        <h2 class="section__title">Tire suas dúvidas</h2>
+      </div>
+      
+      <div class="faq__container">
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq__question">
+            <span>Como funciona a primeira consulta?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Na primeira sessão, faremos uma avaliação inicial onde conversaremos sobre suas 
+              necessidades, expectativas e objetivos com a terapia. É um momento para nos 
+              conhecermos e você entender como funciona o processo terapêutico. Não há 
+              compromisso e você pode decidir se deseja continuar.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq__question">
+            <span>Quanto tempo dura o tratamento?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              A duração varia de acordo com cada pessoa e suas necessidades específicas. 
+              Alguns pacientes alcançam seus objetivos em poucos meses, outros preferem 
+              manter o acompanhamento por mais tempo. Fazemos avaliações periódicas para 
+              monitorar seu progresso e ajustar o plano terapêutico.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+          <button class="faq__question">
+            <span>Qual a frequência das sessões?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Geralmente recomendo sessões semanais, especialmente no início do tratamento. 
+              Com o tempo e conforme seu progresso, podemos espaçar para quinzenal ou mensal. 
+              A frequência é definida em conjunto, considerando suas necessidades e disponibilidade.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="400">
+          <button class="faq__question">
+            <span>O atendimento online é tão eficaz quanto o presencial?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Sim! Diversos estudos comprovam que a terapia online tem a mesma eficácia do 
+              atendimento presencial. Utilizo plataformas seguras e profissionais, garantindo 
+              a mesma qualidade de atendimento, com a vantagem da flexibilidade de horários 
+              e economia de tempo de deslocamento.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="500">
+          <button class="faq__question">
+            <span>Você atende por plano de saúde?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Atualmente trabalho apenas com atendimento particular, o que me permite dedicar 
+              tempo de qualidade a cada paciente e manter a flexibilidade de horários. Forneço 
+              recibos detalhados que você pode utilizar para reembolso junto ao seu plano de 
+              saúde, caso ele ofereça essa opção.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="600">
+          <button class="faq__question">
+            <span>Como faço para agendar uma consulta?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              É muito simples! Clique no botão do WhatsApp aqui no site e preencha o formulário 
+              rápido com suas informações. Entrarei em contato em até 24 horas para agendarmos 
+              sua primeira sessão no melhor horário para você.
+            </p>
+          </div>
+        </div>
+        
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="700">
+          <button class="faq__question">
+            <span>Preciso levar algum documento na primeira consulta?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>
+              Para a primeira consulta, basta levar um documento de identificação com foto. 
+              Se você já tiver relatórios médicos ou de outros profissionais relacionados ao 
+              motivo da consulta, pode trazer, mas não é obrigatório.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta section">
+    <div class="container">
+      <div class="cta__container" data-aos="zoom-in">
+        <div class="cta__content">
+          <h2 class="cta__title">Pronto para dar o primeiro passo?</h2>
+          <p class="cta__description">
+            Agende sua primeira consulta com 20% de desconto e descubra como 
+            a psicoterapia pode transformar sua vida.
+          </p>
+          <a href="#contact" class="btn btn--primary btn--large">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Quero Agendar Agora
+          </a>
+        </div>
+        
+        <div class="cta__features">
+          <div class="cta__feature">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Primeira sessão com desconto</span>
+          </div>
+          <div class="cta__feature">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Atendimento em até 24h</span>
+          </div>
+          <div class="cta__feature">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Online ou presencial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header" data-aos="fade-up">
+        <span class="section__badge">Contato</span>
+        <h2 class="section__title">Vamos conversar?</h2>
+        <p class="section__description">
+          Entre em contato comigo pelo WhatsApp para agendar sua consulta ou tirar dúvidas.
+        </p>
+      </div>
+      
+      <div class="contact__container">
+        <div class="contact__info" data-aos="fade-right">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="contact__info-title">WhatsApp</h3>
+              <p class="contact__info-text">(11) 98765-4321</p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="contact__info-title">E-mail</h3>
+              <p class="contact__info-text">contato@anaclarapsico.com.br</p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="contact__info-title">Endereço</h3>
+              <p class="contact__info-text">Av. Paulista, 1000 - Sala 505<br>São Paulo - SP</p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="contact__info-title">Horário de Atendimento</h3>
+              <p class="contact__info-text">
+                Segunda a Sexta: 8h - 20h<br>
+                Sábado: 8h - 14h
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact__social">
+            <h3>Redes Sociais</h3>
+            <div class="contact__social-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact__form-wrapper" data-aos="fade-left">
+          <div class="contact__whatsapp-card">
+            <div class="contact__whatsapp-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <h3 class="contact__whatsapp-title">Agende pelo WhatsApp</h3>
+            <p class="contact__whatsapp-text">
+              Clique no botão abaixo e preencha as informações. 
+              Responderei em até 24 horas!
+            </p>
+            
+            <button class="btn btn--whatsapp" id="openWhatsAppForm">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Abrir WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="footer__logo-icon">🧠</span>
+            <span class="footer__logo-text">Dra. Ana Clara Oliveira</span>
+          </a>
+          <p class="footer__tagline">
+            Psicóloga CRP 06/123456<br>
+            Cuidando da sua saúde mental com dedicação e profissionalismo.
+          </p>
+        </div>
+        
+        <div class="footer__links">
+          <div class="footer__links-group">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#testimonials">Depoimentos</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__links-group">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#services">Terapia Individual</a></li>
+              <li><a href="#services">Terapia de Casal</a></li>
+              <li><a href="#services">Terapia Familiar</a></li>
+              <li><a href="#services">Atendimento Online</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__links-group">
+            <h4>Contato</h4>
+            <ul>
+              <li>(11) 98765-4321</li>
+              <li>contato@anaclarapsico.com.br</li>
+              <li>Av. Paulista, 1000 - Sala 505</li>
+              <li>São Paulo - SP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Dra. Ana Clara Oliveira. Todos os direitos reservados.
+        </p>
+        <p class="footer__credits">
+          Desenvolvido por <a href="https://tofariasti.github.io/" target="_blank" rel="noopener">Tiago Farias</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp Form Modal -->
+  <div class="modal" id="whatsappModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="closeModal" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal__header">
+        <div class="modal__icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </div>
+        <h3>Agendar Consulta pelo WhatsApp</h3>
+        <p>Preencha as informações abaixo e clique em enviar</p>
+      </div>
+      
+      <form class="whatsapp-form" id="whatsappForm">
+        <div class="form__group">
+          <label for="name" class="form__label">Nome completo *</label>
+          <input type="text" id="name" class="form__input" required placeholder="Digite seu nome">
+        </div>
+        
+        <div class="form__group">
+          <label for="email" class="form__label">E-mail *</label>
+          <input type="email" id="email" class="form__input" required placeholder="seu@email.com">
+        </div>
+        
+        <div class="form__group">
+          <label for="phone" class="form__label">Telefone *</label>
+          <input type="tel" id="phone" class="form__input" required placeholder="(11) 98765-4321">
+        </div>
+        
+        <div class="form__group">
+          <label for="serviceType" class="form__label">Tipo de atendimento *</label>
+          <select id="serviceType" class="form__select" required>
+            <option value="">Selecione uma opção</option>
+            <option value="individual">Terapia Individual</option>
+            <option value="casal">Terapia de Casal</option>
+            <option value="familiar">Terapia Familiar</option>
+            <option value="online">Atendimento Online</option>
+          </select>
+        </div>
+        
+        <div class="form__group">
+          <label for="period" class="form__label">Preferência de horário *</label>
+          <select id="period" class="form__select" required>
+            <option value="">Selecione uma opção</option>
+            <option value="manha">Manhã (8h - 12h)</option>
+            <option value="tarde">Tarde (13h - 17h)</option>
+            <option value="noite">Noite (18h - 20h)</option>
+            <option value="sabado">Sábado</option>
+          </select>
+        </div>
+        
+        <div class="form__group">
+          <label for="message" class="form__label">Breve descrição *</label>
+          <textarea id="message" class="form__textarea" required placeholder="Conte brevemente o que te traz aqui..." rows="4"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn--whatsapp btn--large">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Enviar pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
