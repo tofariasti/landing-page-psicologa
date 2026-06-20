@@ -346,12 +346,13 @@ function initParticles() {
 // ========== SLIDER DE DEPOIMENTOS ==========
 function initTestimonialsSlider() {
   const slider = document.getElementById('testimonials-slider');
+  const track = slider?.querySelector('.testimonials__track');
   const prevBtn = document.querySelector('.testimonials__prev');
   const nextBtn = document.querySelector('.testimonials__next');
   
-  if (!slider || !prevBtn || !nextBtn) return;
+  if (!slider || !track || !prevBtn || !nextBtn) return;
   
-  const cards = slider.querySelectorAll('.testimonial__card');
+  const cards = track.querySelectorAll('.testimonial__card');
   let currentIndex = 0;
   let cardsPerView = getCardsPerView();
   
@@ -362,21 +363,10 @@ function initTestimonialsSlider() {
   }
   
   function updateSlider() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 24;
     const cardWidth = cards[0].offsetWidth;
-    const gap = 32; // 2rem
     const offset = currentIndex * (cardWidth + gap);
-    
-    cards.forEach((card, index) => {
-      card.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-      card.style.transform = `translateX(-${offset}px)`;
-      
-      // Fade out para cards fora da view
-      if (index >= currentIndex && index < currentIndex + cardsPerView) {
-        card.style.opacity = '1';
-      } else {
-        card.style.opacity = '0.3';
-      }
-    });
+    track.style.transform = `translateX(-${offset}px)`;
   }
   
   function nextSlide() {
@@ -411,7 +401,7 @@ function initTestimonialsSlider() {
   // Reajustar ao redimensionar
   window.addEventListener('resize', () => {
     cardsPerView = getCardsPerView();
-    currentIndex = 0;
+    currentIndex = Math.min(currentIndex, Math.max(0, cards.length - cardsPerView));
     updateSlider();
   });
   

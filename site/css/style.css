@@ -1088,19 +1088,24 @@ img {
 }
 
 .testimonials__slider {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  overflow: hidden;
   margin-bottom: 2.5rem;
 }
 
+.testimonials__track {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
 .testimonial__card {
+  flex: 0 0 100%;
   background: white;
   padding: 2.25rem 2rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--neutral-200);
   box-shadow: var(--shadow-xs);
-  transition: all var(--transition-smooth);
+  transition: box-shadow var(--transition-smooth), border-color var(--transition-smooth), transform var(--transition-smooth);
   position: relative;
 }
 
@@ -1202,6 +1207,18 @@ img {
 .testimonials__next svg {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__card {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__card {
+    flex: 0 0 calc((100% - 3rem) / 3);
+  }
 }
 
 /* ========== FAQ SECTION ========== */
@@ -1899,8 +1916,8 @@ img {
     grid-template-columns: 1fr;
   }
   
-  .testimonials__slider {
-    grid-template-columns: 1fr;
+  .testimonial__card {
+    flex: 0 0 100%;
   }
   
   .modal__content {
